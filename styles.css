@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+
+
+/**********GLOBAL************************/
+html{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+    /*Colour Palette*/
+    --dark-p: #11001c;
+    --p: #780264;
+    --light-p: #9a02f2;
+    --white: #ffffff;
+}
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 80vw;
+    padding: 6.25rem 0;
+}
+
+/*TYPOHRAPHY********/
+h2{
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--light-p);
+}
+
+h3{
+
+}/*for product detail header*/
+
+h4{
+    margin: 0;
+    font-weight: 500;
+}/*product sub-headings*/
+
+h5{
+    margin: 0;
+    font-weight: 500;
+}/*footer*/
+
+p{
+
+}
+
+
+/**********************HEADER*********************/
+header{
+    margin: 0;
+    padding: .625rem;
+    background-color: var(--dark-p);
+}
+
+/*LOGO*********/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .3125rem;
+}
+
+h1{
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 10rem;
+}
+
+h1 span{
+    color: var(--light-p);
+}
+
+.fa-pen-fancy{
+    color: var(--light-p);
+    font-size: 10rem;
+}
+
+
+
+/*******************NAV**************************/
+nav{
+    margin: 0;
+    background-color: var(--p);
+    /*width: 100vw;*/
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav *{
+    display: inline;
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav li a{
+    margin: 0;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1.6rem 1.75rem;
+    font-weight: 400;  
+}
+
+nav li a:hover{
+    background-color: var(--light-p);
+}
+
+#menu{
+    padding: 0;
+}
+
+#menu-toggle{
+    display: none;
+    background-color: var(--p);
+    color: var(--white);
+    border: none;
+    font-size: 2rem;
+}
+
+#menu.active{
+    display: flex;
+}
+
+/***********HERO***************************/
+.hero *{
+    margin: 0;
+}
+
+.hero{
+    height: 80vh;
+    padding: 0 3.125rem;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+    url(img/home_hero-tree-6485074_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h2{
+    color: var(--white);
+}
+
+.fa-heart{
+    font-size: 1.875rem;
+    padding: 1rem 0;
+}
+
+/*************PRODUCTS*******************/
+.products img{
+    width: 25rem;
+}
+
+.add-ons img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.flex-products{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.875rem;
+}
+
+.flex-products h4:nth-child(odd){
+    color: var(--p);
+}
+
+/**************GALLERY*************************/
+.grid-gallery{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.grid-gallery img{
+    max-width: 100%;
+}
+
+.stretch{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/**************FOOTER**************************/
+footer{
+    margin: 0;
+    padding: 1.25rem;
+    background-color: var(--p);
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+
+
+/***tablet-less than 768px***/
+@media screen and (max-width: 48em){
+
+    
+
+}
+
+/***mobile-less than 480px***/
+@media screen and (max-width: 30em){
+
+    
+
+    #menu-toggle{
+        display: inline;
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--red);
+        padding: .625rem;
+        text-align: center;
+    }
+
+    #menu li{
+        padding: .5rem 0;
+    }
+
+    
+}
