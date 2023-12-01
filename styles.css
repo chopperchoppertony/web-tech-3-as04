@@ -116,6 +116,10 @@ nav li a:hover{
     background-color: var(--light-p);
 }
 
+.fa-cart-shopping{
+    color: var(--white);
+}
+
 #menu{
     padding: 0;
 }
