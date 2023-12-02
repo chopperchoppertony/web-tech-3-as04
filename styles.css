@@ -118,6 +118,7 @@ nav li a:hover{
 
 .fa-cart-shopping{
     color: var(--white);
+    padding-right: 1.25rem;
 }
 
 #menu{
@@ -221,7 +222,44 @@ footer{
 /***tablet-less than 768px***/
 @media screen and (max-width: 48em){
 
+    h1{
+        font-size: 6rem;
+    }
+
+    .fa-pen-fancy{
+        font-size: 6rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+
+    nav{
+        height: 4rem;
+    }
+
+    nav li a{
+        margin: 0;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        padding: 0.9rem 1.75rem;
+        font-weight: 400;  
+    }
+
+    .products img{
+        width: 18rem;
+    }
     
+    .add-ons img{
+        width: 18rem;
+        height: 18rem;
+    }
+
 
 }
 
